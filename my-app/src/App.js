@@ -1,10 +1,9 @@
 import React from 'react';
 import './App.css';
 
-import NavBar from "./Navbar";
+import NavBar from "./Navbar.jsx";
 import Content from "./Content";
 import Footer from "./Footer";
-import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
 
 function App() {
   return (
