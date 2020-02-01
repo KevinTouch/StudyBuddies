@@ -20,8 +20,30 @@
   flex: 1;
 }
 
+.Content {
+  display: flex;
+  height: 950px;
+}
+
+.Content div{
+  border: 1px black solid;
+  padding: 10px;
+}
+
+.box-1 {
+  flex: 1;
+}
 
 
+.Footer {
+  display: flex;
+}
 
+.Footer div{
+  border: 1px black solid;
+  padding: 10px;
+}
 
-
+.box-1 {
+  flex: 1;
+}
