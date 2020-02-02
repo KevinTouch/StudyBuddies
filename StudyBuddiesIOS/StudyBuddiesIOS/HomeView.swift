@@ -6,6 +6,7 @@
 //  Copyright © 2020 Ugyen Dorji. All rights reserved.
 //
 
+import MapKit
 import SwiftUI
 
 struct Event: Identifiable{
@@ -21,6 +22,7 @@ struct Buddy: Identifiable{
 }
 
 struct HomeView: View {
+    @State private var selection = 0
     
     
 //    Dummy data will link to firebase database to pull info such as user's buddies, joined events
@@ -43,7 +45,9 @@ struct HomeView: View {
     
     
     var body: some View {
-        TabView(selection: /*@START_MENU_TOKEN@*/ /*@PLACEHOLDER=Selection@*/.constant(1)/*@END_MENU_TOKEN@*/) {
+        TabView(selection: $selection) {
+            
+//            Home View
               NavigationView{
                         VStack{
                             
@@ -75,11 +79,26 @@ struct HomeView: View {
                        
                         
                 }.tabItem { VStack(alignment: .center) {
-                Image("studying").resizable().frame(width:30, height:30).clipped()
+                Image("homes")
                 Text("Home")
                 } }.tag(1)
             
-            /*@START_MENU_TOKEN@*/Text("Tab Content 2").tabItem { Text("Tab Label 2") }.tag(2)/*@END_MENU_TOKEN@*/
+//          Search/Explore View
+            
+            NavigationView{
+                VStack{
+                    MapView()
+                }
+            }.tabItem { VStack(alignment: .center) {
+            Image("globe")
+            Text("Explore")
+            }  }.tag(2)
+            
+//            Add Event
+            Text("Tab Content 2").tabItem { VStack(alignment: .center) {
+            Image("globe")
+            Text("Create")
+            }  }.tag(3)
         }
       
     }

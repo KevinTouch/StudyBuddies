@@ -10,6 +10,8 @@
 		271077095B081F5C98603DC5 /* Pods_StudyBuddiesIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43076BB46B0DD78B97E00AD2 /* Pods_StudyBuddiesIOS.framework */; };
 		6084A3DE23E67E65001BA90C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6084A3DD23E67E65001BA90C /* HomeView.swift */; };
 		6084A3E023E69B19001BA90C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6084A3DF23E69B19001BA90C /* HomeViewController.swift */; };
+		6084A3E223E6D764001BA90C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6084A3E123E6D764001BA90C /* MapKit.framework */; };
+		6084A3E623E6DD71001BA90C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6084A3E523E6DD70001BA90C /* MapView.swift */; };
 		87C9A7BE23E613DD0089AB62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C9A7BD23E613DD0089AB62 /* AppDelegate.swift */; };
 		87C9A7C023E613DD0089AB62 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C9A7BF23E613DD0089AB62 /* SceneDelegate.swift */; };
 		87C9A7C223E613DD0089AB62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C9A7C123E613DD0089AB62 /* ViewController.swift */; };
@@ -29,6 +31,8 @@
 		43076BB46B0DD78B97E00AD2 /* Pods_StudyBuddiesIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudyBuddiesIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6084A3DD23E67E65001BA90C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		6084A3DF23E69B19001BA90C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		6084A3E123E6D764001BA90C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		6084A3E523E6DD70001BA90C /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapView.swift; path = /Users/ugyend/Documents/GitHub/StudyBuddies/StudyBuddiesIOS/StudyBuddiesIOS/MapView.swift; sourceTree = "<absolute>"; };
 		71FB7C56EC67E16824B0B1C9 /* Pods-StudyBuddiesIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyBuddiesIOS.release.xcconfig"; path = "Target Support Files/Pods-StudyBuddiesIOS/Pods-StudyBuddiesIOS.release.xcconfig"; sourceTree = "<group>"; };
 		80204E5CA2ECB30AB59B731A /* Pods-StudyBuddiesIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyBuddiesIOS.debug.xcconfig"; path = "Target Support Files/Pods-StudyBuddiesIOS/Pods-StudyBuddiesIOS.debug.xcconfig"; sourceTree = "<group>"; };
 		87C9A7BA23E613DD0089AB62 /* StudyBuddiesIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyBuddiesIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6084A3E223E6D764001BA90C /* MapKit.framework in Frameworks */,
 				271077095B081F5C98603DC5 /* Pods_StudyBuddiesIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,6 +79,7 @@
 		453B1380FA79AC63F1077EEF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6084A3E123E6D764001BA90C /* MapKit.framework */,
 				43076BB46B0DD78B97E00AD2 /* Pods_StudyBuddiesIOS.framework */,
 			);
 			name = Frameworks;
@@ -102,6 +108,7 @@
 			children = (
 				87C9A7D723E614C30089AB62 /* View Controllers */,
 				87C9A7BD23E613DD0089AB62 /* AppDelegate.swift */,
+				6084A3E523E6DD70001BA90C /* MapView.swift */,
 				6084A3DD23E67E65001BA90C /* HomeView.swift */,
 				87C9A7BF23E613DD0089AB62 /* SceneDelegate.swift */,
 				87C9A7DA23E61F760089AB62 /* Helpers */,
@@ -267,6 +274,7 @@
 				87C9A7D223E614920089AB62 /* SignUpViewController.swift in Sources */,
 				6084A3E023E69B19001BA90C /* HomeViewController.swift in Sources */,
 				87C9A7D423E614AC0089AB62 /* LoginViewController.swift in Sources */,
+				6084A3E623E6DD71001BA90C /* MapView.swift in Sources */,
 				87C9A7C023E613DD0089AB62 /* SceneDelegate.swift in Sources */,
 				87C9A7DE23E645400089AB62 /* Constants.swift in Sources */,
 			);
