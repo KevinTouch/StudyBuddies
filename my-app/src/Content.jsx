@@ -11,16 +11,14 @@ class Content extends Component {
     render() {
       return (
         <div style={{padding: '5px'}}>
-          <Container>
-            <Row>
-              <Col>
-                <SlideShow />
-              </Col>
-            </Row>    
-            
+          <Container fluid="true">
+            <Row> <SlideShow />  </Row>
+            <div style={{padding: '20px'}}>
             <Row>
               <StudyForm/>
             </Row>
+
+            </div>
           </Container>
           </div>
         );

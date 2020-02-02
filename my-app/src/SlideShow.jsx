@@ -4,7 +4,8 @@ import Carousel from 'react-bootstrap/Carousel';
 class SlideShow extends Component {
 	render() {
 		return (
-				<Carousel interval="5000">
+			<div style={{ margin: 0, width: "100%"}}>
+			<Carousel interval="5000">
 				  <Carousel.Item>
 				    <img
 				      src={require('./imgs/studying_students_img1.jpg')}
@@ -45,6 +46,7 @@ class SlideShow extends Component {
 				  </Carousel.Item>
 				
 				</Carousel>
+				</div>
 		)
 	};
 }
