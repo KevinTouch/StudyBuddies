@@ -30,6 +30,7 @@ this.handleChange = this.handleChange.bind(this);
 
 
 handleChange(e) {
+	console.log(e.target.value)
 	this.setState({
 		[e.target.name]: e.target.value
 	});
@@ -116,7 +117,7 @@ onHandleSubmit(e)
 			    />
 				</InputGroup>
 
-				<Button type="submit" onClick={this.onHandleSubmit}>Submit form</Button>
+				<Button onClick={this.onHandleSubmit}>Submit form</Button>
 				</div>
 			);
 		}
