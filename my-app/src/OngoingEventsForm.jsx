@@ -8,21 +8,42 @@ class OngoingEventsForm extends Component {
 		this.state = {
 			currentItem: '',
 			username: '',
-			items: []
+			items: [],
+
+			class: "",
+			location: "",
+			participants: "",
+			time: "",
+			title: ""
 		}
+
 		this.handleChange = this.handleChange.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this); 
 	}
 
 	componentDidMount() {
 		let db = firebase.firestore();
-		db.collection("users").get().then((querySnapshot) => {
-			querySnapshot.forEach((doc) => {
-					console.log(`${doc.id} => ${doc.data()["firstname"]}`);
+    const itemsT = [];
+		db.collection("events").get()
+	    .then(function(querySnapshot) {
+	        querySnapshot.forEach(function(doc) {
+							console.log(doc.id, " => ", doc.data());
+							const data = {
+								class: doc.data()["class"],
+								location: doc.data()["location"],
+								participants: doc.data()["participants"],
+								time: doc.data()["time"],
+								title: doc.data()["title"]
+							}
+							itemsT.push(data);
+	        });
+	    }) .catch(function(error) {
+	        console.log("Error getting documents: ", error);
 			});
-	});
-
-	}
+			
+			this.setState({ items: itemsT });
+			console.log("Set");
+		}
 
 	handleChange(e) {
 		this.setState({
@@ -52,7 +73,30 @@ class OngoingEventsForm extends Component {
 	}
 
 
+	renderTables() {
+		
+		return(
+			<div>
+				<Table responsive="sm">
+		    <thead>
+		      <tr>
+		        <th>#</th>
+		        <th>Table heading</th>
+		        <th>Table heading</th>
+		        <th>Table heading</th>
+		        <th>Table heading</th>
+		        <th>Table heading</th>
+		        <th>Table heading</th>
+		      </tr>
+		    </thead>
+			</Table>
+			</div>
+		);
+	};
+
+
 	render() {
+		const {items} = this.state;
 		return ( 	
 			<div>
 				Ongoing Events
@@ -63,16 +107,6 @@ class OngoingEventsForm extends Component {
 					<button onClick={this.handleSubmit}>submit</button> 				
 					</form>
 				</section>
-				<ul>
-					{this.state.items.map((item) => {
-	        return (
-	          <li key={item.id}>
-	            <h3>{item.title}</h3>
-	            <p>brought by: {item.user}</p>
-	          </li>
-        	)
-      })}
-				</ul>
 			</div>
 		);
 	}

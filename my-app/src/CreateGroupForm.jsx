@@ -111,12 +111,6 @@ class CreateGroupForm extends Component {
 					/>
 				</InputGroup>
 				
-
-
-
-
-
-
 				</div>
 			);
 		}
