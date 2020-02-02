@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import InputGroup, { InputGroupText } from 'react-bootstrap/InputGroup'
 import FormControl from 'react-bootstrap/FormControl'
+<<<<<<< HEAD
+=======
 import firebase from './firebase.js'; 
+>>>>>>> dd0fb495cf688717740eb44e30f19e134a1dcb0a
 
 
 class CreateGroupForm extends Component {
