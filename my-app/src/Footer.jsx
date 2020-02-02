@@ -6,6 +6,7 @@ import Row from 'react-bootstrap/Row'
 class Footer extends Component {
 	render() {
 		return (
+			<div style={{padding: '5px'}}>
 			<Container>
 				<Row>
 					<Col>
@@ -13,6 +14,7 @@ class Footer extends Component {
 					</Col>
 				</Row>
 			</Container>
+			</div>
 		)
 	};
 }

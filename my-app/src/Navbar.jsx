@@ -8,6 +8,7 @@ import Card from 'react-bootstrap/Card'
 class NavBar extends Component {
     render() {
         return (
+            <div style={{padding: '5px'}}>
             <Container fluid="true">
                 <Row>
                     <Col> 
@@ -47,6 +48,7 @@ class NavBar extends Component {
                     </Col>
                 </Row>
             </Container>
+            </div>
         );
   }
 }

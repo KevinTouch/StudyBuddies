@@ -10,6 +10,7 @@ import StudyForm from './StudyForm';
 class Content extends Component {
     render() {
       return (
+        <div style={{padding: '5px'}}>
           <Container>
             <Row>
               <Col>
@@ -20,8 +21,8 @@ class Content extends Component {
             <Row>
               <StudyForm/>
             </Row>
-
           </Container>
+          </div>
         );
     }
 }
