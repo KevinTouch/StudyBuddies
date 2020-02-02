@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import InputGroup, { InputGroupText } from 'react-bootstrap/InputGroup'
 import FormControl from 'react-bootstrap/FormControl'
-import * as NumericInput from "react-numeric-input";
 
 
 class CreateGroupForm extends Component {
