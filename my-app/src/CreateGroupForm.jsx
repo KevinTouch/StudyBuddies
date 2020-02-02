@@ -99,7 +99,7 @@ class CreateGroupForm extends Component {
 					/>
 				</InputGroup>
 
-				<InputGroup className ="mb-3"onChange={this.handleChange} value={title} name="title">
+				<InputGroup className ="mb-3" onChange={this.handleChange} value={title} name="title">
 					<InputGroup.Prepend> 
 						<InputGroup.Text id="basic-addon1" style={{paddingRight:"65px"}}>Title</InputGroup.Text>
 					</InputGroup.Prepend>
