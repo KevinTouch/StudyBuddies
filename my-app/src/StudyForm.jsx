@@ -15,13 +15,10 @@ class StudyForm extends Component {
 						<CreateGroupForm />
 					</Col>
 
-
 					<Col>
-					{/*<div style={{ 
-							border: 'solid',
-					borderWidth: '1px'}}>*/}
 						<OngoingEventsForm />
 					</Col>
+
 				</Row>    
 		 </Container>
 	);

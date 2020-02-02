@@ -10,6 +10,7 @@ import UIKit
 import SwiftUI
 
 class HomeViewController: UIViewController {
+<<<<<<< HEAD
    
     let homeViewController = UIHostingController(rootView: HomeView())
     
@@ -43,4 +44,21 @@ class HomeViewController: UIViewController {
     }
     */
 
+=======
+    
+    
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        print("AT HOME")
+
+        // Do any additional setup after loading the view.
+    }
+    
+    
+    
+    
+    
+>>>>>>> 5798fcf5553263e471f806c00c74c2414b0fb181
 }
