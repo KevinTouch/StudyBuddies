@@ -75,14 +75,16 @@ class CreateEventViewController: UIViewController {
                                                       "time": Time,
                                                       "title": Title,
                                                       "participants": 1])
+            
+            self.transitionToHome()
         }
-        self.transitionToHome()
     }
     
     
     
 
     @IBAction func cancelTapped(_ sender: Any) {
+        self.transitionToHome()
     }
 
     
