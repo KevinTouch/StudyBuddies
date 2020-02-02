@@ -18,9 +18,9 @@
 		87C9A7D423E614AC0089AB62 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C9A7D323E614AC0089AB62 /* LoginViewController.swift */; };
 		87C9A7D623E614B70089AB62 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C9A7D523E614B70089AB62 /* HomeViewController.swift */; };
 		87C9A7D923E61F630089AB62 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C9A7D823E61F630089AB62 /* Utilities.swift */; };
-		87C9A7DC23E632A50089AB62 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87C9A7DB23E632A50089AB62 /* GoogleService-Info.plist */; };
 		87C9A7DE23E645400089AB62 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C9A7DD23E645400089AB62 /* Constants.swift */; };
 		87C9A82A23E67A740089AB62 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C9A82923E67A740089AB62 /* CreateEventViewController.swift */; };
+		87C9A84923E6AD4E0089AB62 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87C9A84823E6AD4D0089AB62 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -176,10 +176,10 @@
 		87C9A7D323E614AC0089AB62 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		87C9A7D523E614B70089AB62 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		87C9A7D823E61F630089AB62 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		87C9A7DB23E632A50089AB62 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		87C9A7DD23E645400089AB62 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		87C9A7E823E661640089AB62 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		87C9A82923E67A740089AB62 /* CreateEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
+		87C9A84823E6AD4D0089AB62 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BA2655B582ACBBF11225320E /* Pods-LoginApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginApp.debug.xcconfig"; path = "Target Support Files/Pods-LoginApp/Pods-LoginApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -244,7 +244,7 @@
 				87C9A7C623E613E00089AB62 /* Assets.xcassets */,
 				87C9A7C823E613E00089AB62 /* LaunchScreen.storyboard */,
 				87C9A7CB23E613E00089AB62 /* Info.plist */,
-				87C9A7DB23E632A50089AB62 /* GoogleService-Info.plist */,
+				87C9A84823E6AD4D0089AB62 /* GoogleService-Info.plist */,
 				87C9A7DF23E64C180089AB62 /* Media */,
 			);
 			path = StudyBuddiesIOS;
@@ -507,7 +507,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87C9A7CA23E613E00089AB62 /* LaunchScreen.storyboard in Resources */,
-				87C9A7DC23E632A50089AB62 /* GoogleService-Info.plist in Resources */,
+				87C9A84923E6AD4E0089AB62 /* GoogleService-Info.plist in Resources */,
 				87C9A7C723E613E00089AB62 /* Assets.xcassets in Resources */,
 				87C9A7C523E613DD0089AB62 /* Main.storyboard in Resources */,
 			);
