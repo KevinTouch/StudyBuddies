@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import InputGroup, { InputGroupText } from 'react-bootstrap/InputGroup'
 import FormControl from 'react-bootstrap/FormControl'
 import firebase from './firebase.js'; 
+import Button from 'react-bootstrap/Button'
 
 
 class CreateGroupForm extends Component {
@@ -29,8 +30,11 @@ class CreateGroupForm extends Component {
 
 		let db = firebase.firestore();
 		db.collection("events").add({
-			title: this.state.currentItem,
-			user: this.state.username
+			class: this.state.classType,
+			location: this.state.location, 
+			participants: this.state.participants, 
+			time: this.state.time, 
+			title: this.state.title
 		})
 		.then(function(docRef) {
 				console.log("Document written with ID: ", docRef.id);
@@ -40,8 +44,11 @@ class CreateGroupForm extends Component {
 		});
 
 		this.setState({
-			currentItem: '',
-			username: ''
+			classType: '',
+			location: '', 
+			participants: '', 
+			time: '', 
+			title: ''
 		});
 	}
 
@@ -99,7 +106,7 @@ class CreateGroupForm extends Component {
 					/>
 				</InputGroup>
 
-				<InputGroup className ="mb-3" onChange={this.handleChange} value={title} name="title">
+				<InputGroup className ="mb-3"onChange={this.handleChange} value={title} name="title">
 					<InputGroup.Prepend> 
 						<InputGroup.Text id="basic-addon1" style={{paddingRight:"65px"}}>Title</InputGroup.Text>
 					</InputGroup.Prepend>
@@ -110,7 +117,7 @@ class CreateGroupForm extends Component {
 						aria-describedby="basic-addon1"
 					/>
 				</InputGroup>
-				
+				<Button onClick={this.handleSubmit}>Submit</Button>
 				</div>
 			);
 		}

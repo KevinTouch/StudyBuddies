@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/ugyend/Documents/GitHub/StudyBuddies/StudyBuddiesIOS/StudyBuddiesIOS/MapView.swift">
+   </FileRef>
+   <FileRef
       location = "group:/Users/Taran/Desktop/LoginApp/StudyBuddiesIOS.xcodeproj">
    </FileRef>
    <FileRef
