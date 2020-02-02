@@ -6,6 +6,9 @@ import FormControl from 'react-bootstrap/FormControl'
 
 import DropdownButton from 'react-bootstrap/DropdownButton'
 
+//import TimePicker from 'rc-time-picker' 
+import moment from 'moment'
+
 // componentDidMount(){
 // 	this.setState({});
 //}; 
@@ -16,54 +19,56 @@ class CreateGroupForm extends Component {
 {
 	super(); 
 	this.state = {eventTitle: "",
-	time: "", 
+	time: moment(), 
 	major: "",
 	department: "", 
 	coursecode: "", 
 	coursenum: "" 
 };
-this.handleEventTitle = this.handleEventTitle.bind(this);
+this.handleChange = this.handleChange.bind(this);
 }
 
 
-handleEventTitle(e) {this.setState({eventTitle : e.target.eventTitle}); }
+handleChange(e) {
+	this.setState({
+		[e.target.name]: e.target.value
+	});
+}
 
-handleTime(e){this.setState({time: e.target.time}); }
-
-handleMajor(e){this.setState({major: e.target.major}); }
-
-handleDepartment(e){this.setState({department: e.target.department}); }
-
-handlecourseCode(e){this.setState({coursecode: e.target.coursecode}); }
-
-handleCourseNum(e){this.setState({coursenum: e.target.coursenum}); }
+onHandleSubmit(e)
+{
+	e.preventDefault(); 
+	console.log("X");
+	const demop = {test: this.state.eventTitle}; 
+	console.log(demop); 
 	
-	render() {
+}
+
+	render() { 
 		return ( 
 			<div>
 				Create Events
-				<InputGroup className ="mb-3"> 
+				<InputGroup className ="mb-3" name="eventTitle" onChange={this.handleEventChange} value={this.state.eventTitle}>
 				<InputGroup.Prepend> 
 				<InputGroup.Text id="basic-addon1">Event Title</InputGroup.Text>
 				</InputGroup.Prepend>
-				<FormControl placeholder="Enter Event Titile"
+				<FormControl
+				name="eventTitle" 
+				placeholder="Enter Event Titile"
 				aria-label="Event Title"
 				aria-describedby="basic-addon1"
 				/>
+				<InputGroup.Append>
+				</InputGroup.Append>
 				</InputGroup>
 				
 				<InputGroup className="mb-3">
 			    <InputGroup.Prepend>
 			      <InputGroup.Text id="basic-addon1">Time</InputGroup.Text>
 			    </InputGroup.Prepend>
-			    <DropdownButton title="Enter Time"
-			      placeholder="9:00"
-			      aria-label="Time"
-			      aria-describedby="basic-addon1"
-			    />
 				</InputGroup>
 
-				<InputGroup className="mb-3" OnChange={this.handleMajor}>
+				<InputGroup className="mb-3" onChange={this.handleMajor}>
 			    <InputGroup.Prepend>
 			      <InputGroup.Text id="basic-addon1">School/Major</InputGroup.Text>
 			    </InputGroup.Prepend>
@@ -111,7 +116,7 @@ handleCourseNum(e){this.setState({coursenum: e.target.coursenum}); }
 			    />
 				</InputGroup>
 
-				<Button type="submit">Submit form</Button>
+				<Button type="submit" onClick={this.onHandleSubmit}>Submit form</Button>
 				</div>
 			);
 		}
