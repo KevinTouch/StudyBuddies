@@ -42,14 +42,14 @@ onHandleSubmit(e)
 	console.log("X");
 	const demop = {test: this.state.eventTitle}; 
 	console.log(demop); 
-	
+
 }
 
 	render() { 
 		return ( 
 			<div>
 				Create Events
-				<InputGroup className ="mb-3" name="eventTitle" onChange={this.handleEventChange} value={this.state.eventTitle}>
+				<InputGroup className ="mb-3" name="eventTitle" onChange={this.handleChange} value={this.state.eventTitle}>
 				<InputGroup.Prepend> 
 				<InputGroup.Text id="basic-addon1">Event Title</InputGroup.Text>
 				</InputGroup.Prepend>
